@@ -9,6 +9,8 @@ use Site;
 /**
  * Translates api sitematrix results json into an array of Site objects
  *
+ * @since 1.27
+ *
  * @license GPL-2.0+
  * @author Katie Filbert < aude.wiki@gmail.com >
  */

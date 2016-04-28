@@ -8,7 +8,7 @@ use SiteStore;
 /**
  * Builds the site identifiers table
  *
- * @since 0.5
+ * @since 1.27
  *
  * @license GPL-2.0+
  * @author Katie Filbert < aude.wiki@gmail.com >
