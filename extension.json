@@ -1,0 +1,30 @@
+{
+	"name": "Wikimedia Sites",
+	"version": "0.1",
+	"author": [
+		"Katie Filbert",
+		"Wikidata team"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:WikimediaSites",
+	"descriptionmsg": "wikimediasites-desc",
+	"license-name": "MIT",
+	"type": "other",
+	"ExtensionMessagesFiles": {
+		"WikimediaSitesAlias": "WikimediaSites.i18n.alias.php"
+	},
+	"Hooks": {
+		"UnitTestsList": [
+			"Wikimedia\\Sites\\Hooks::onUnitTestsList"
+		]
+	},
+	"config": {
+	},
+	"MessagesDirs": {
+		"WikimediaSites": [
+			"i18n"
+		]
+	},
+	"SpecialPages": {
+	},
+	"manifest_version": 1
+}
