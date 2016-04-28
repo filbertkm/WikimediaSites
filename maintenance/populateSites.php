@@ -15,19 +15,19 @@ $basePath = getenv( 'MW_INSTALL_PATH' ) !== false
 require_once $basePath . '/maintenance/Maintenance.php';
 
 /**
- * Maintenance script for populating the Sites table from another wiki that runs the
+ * Maintenance script for populating the SiteStore from another wiki that runs the
  * SiteMatrix extension.
  *
  * @license GPL-2.0+
  * @author Daniel Kinzler
  * @author Katie Filbert < aude.wiki@gmail.com >
  */
-class PopulateSitesTable extends Maintenance {
+class PopulateSites extends Maintenance {
 
 	public function __construct() {
 		parent::__construct();
 
-		$this->addDescription( 'Populate the sites table from another wiki that runs the SiteMatrix extension' );
+		$this->addDescription( 'Populate the site store from another wiki that runs the SiteMatrix extension' );
 
 		$this->addOption( 'strip-protocols', "Strip http/https from URLs to make them protocol relative." );
 		$this->addOption( 'force-protocol', "Force a specific protocol for all URLs (like http/https).", false, true );
@@ -109,5 +109,5 @@ class PopulateSitesTable extends Maintenance {
 
 }
 
-$maintClass = PopulateSitesTable::class;
+$maintClass = PopulateSites::class;
 require_once RUN_MAINTENANCE_IF_MAIN;
