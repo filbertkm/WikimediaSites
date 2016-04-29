@@ -22,6 +22,7 @@
         ]
     },
     "AutoloadClasses": {
+        "Wikimedia\\Sites\\Hooks": "src/Hooks.php",
         "Wikimedia\\Sites\\SiteMatrixParser": "src/SiteMatrixParser.php",
         "Wikimedia\\Sites\\SitesBuilder": "src/SitesBuilder.php"
     },
